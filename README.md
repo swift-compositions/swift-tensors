@@ -8,7 +8,7 @@ N-dimensional tensor types and operations for Swift.
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/swift-foundations/swift-tensors.git", branch: "main")
+    .package(url: "https://github.com/swift-compositions/swift-tensors.git", branch: "main")
 ]
 ```
 

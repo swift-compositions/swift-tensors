@@ -18,19 +18,19 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-primitives/swift-tensor-primitives.git",
+            url: "https://github.com/swift-molecules/swift-tensor.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-complex-primitives.git",
+            url: "https://github.com/swift-molecules/swift-complex.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-numeric-primitives.git",
+            url: "https://github.com/swift-molecules/swift-numeric.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-primitives/swift-vector-primitives.git",
+            url: "https://github.com/swift-molecules/swift-vector.git",
             branch: "main"
         ),
         .package(url: "https://github.com/swift-iso/swift-iso-9899.git", branch: "main"),
@@ -40,11 +40,11 @@ let package = Package(
         .target(
             name: "Tensors Core",
             dependencies: [
-                .product(name: "Tensor Primitives", package: "swift-tensor-primitives"),
-                .product(name: "Complex Primitives", package: "swift-complex-primitives"),
-                .product(name: "Numeric Primitives", package: "swift-numeric-primitives"),
-                .product(name: "Real Primitives", package: "swift-numeric-primitives"),
-                .product(name: "Vector Primitives", package: "swift-vector-primitives"),
+                .product(name: "Tensor", package: "swift-tensor"),
+                .product(name: "Complex", package: "swift-complex"),
+                .product(name: "Numeric", package: "swift-numeric"),
+                .product(name: "Real", package: "swift-numeric"),
+                .product(name: "Vector", package: "swift-vector"),
                 .product(name: "ISO 9899 Core", package: "swift-iso-9899"),
             ]
         ),
@@ -67,8 +67,8 @@ let package = Package(
             dependencies: [
                 "Tensors",
                 .product(
-                    name: "Tensor Primitives Test Support",
-                    package: "swift-tensor-primitives"
+                    name: "Tensor Test Support",
+                    package: "swift-tensor"
                 ),
             ],
             path: "Tests/Support"
