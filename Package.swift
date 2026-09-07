@@ -43,7 +43,6 @@ let package = Package(
                 .product(name: "Tensor", package: "swift-tensor"),
                 .product(name: "Complex", package: "swift-complex"),
                 .product(name: "Numeric", package: "swift-numeric"),
-                .product(name: "Real", package: "swift-numeric"),
                 .product(name: "Vector", package: "swift-vector"),
                 .product(name: "ISO 9899 Core", package: "swift-iso-9899"),
             ]
