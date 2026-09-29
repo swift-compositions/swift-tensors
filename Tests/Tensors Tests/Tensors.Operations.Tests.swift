@@ -1,3 +1,5 @@
+import Cardinal
+import Ordinal
 import Tensors_Test_Support
 import Testing
 

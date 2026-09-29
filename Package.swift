@@ -18,6 +18,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-atoms/swift-cardinal.git", branch: "main"),
+        .package(url: "https://github.com/swift-atoms/swift-ordinal.git", branch: "main"),
         .package(
             url: "https://github.com/swift-molecules/swift-tensor.git",
             branch: "main"
@@ -54,6 +55,7 @@ let package = Package(
             dependencies: [
                 "Tensors Core",
                 .product(name: "Cardinal", package: "swift-cardinal"),
+                .product(name: "Ordinal", package: "swift-ordinal"),
             ]
         ),
 
@@ -82,6 +84,8 @@ let package = Package(
             dependencies: [
                 "Tensors",
                 "Tensors Test Support",
+                .product(name: "Cardinal", package: "swift-cardinal"),
+                .product(name: "Ordinal", package: "swift-ordinal"),
             ]
         ),
     ],
