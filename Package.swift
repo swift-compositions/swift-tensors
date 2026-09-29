@@ -17,6 +17,7 @@ let package = Package(
         .library(name: "Tensors Test Support", targets: ["Tensors Test Support"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/swift-atoms/swift-cardinal.git", branch: "main"),
         .package(
             url: "https://github.com/swift-molecules/swift-tensor.git",
             branch: "main"
@@ -50,7 +51,10 @@ let package = Package(
 
         .target(
             name: "Tensors Operations",
-            dependencies: ["Tensors Core"]
+            dependencies: [
+                "Tensors Core",
+                .product(name: "Cardinal", package: "swift-cardinal"),
+            ]
         ),
 
         .target(
