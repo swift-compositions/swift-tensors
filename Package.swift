@@ -66,7 +66,7 @@ let package = Package(
             dependencies: [
                 "Tensors",
                 .product(
-                    name: "Tensor Test Support",
+                    name: "Tensor",
                     package: "swift-tensor"
                 ),
             ],
