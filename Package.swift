@@ -22,15 +22,15 @@ let package = Package(
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-complex.git",
+            url: "https://github.com/swift-atoms/swift-complex.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-numeric.git",
+            url: "https://github.com/swift-atoms/swift-numeric.git",
             branch: "main"
         ),
         .package(
-            url: "https://github.com/swift-molecules/swift-vector.git",
+            url: "https://github.com/swift-atoms/swift-vector.git",
             branch: "main"
         ),
         .package(url: "https://github.com/swift-iso/swift-iso-9899.git", branch: "main"),
