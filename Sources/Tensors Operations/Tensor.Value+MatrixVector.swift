@@ -1,5 +1,5 @@
-public import Tensors_Core
 public import Cardinal
+public import Tensors_Core
 
 extension Tensor.Value
 where

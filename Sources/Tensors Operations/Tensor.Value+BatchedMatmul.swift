@@ -1,6 +1,6 @@
-public import Tensors_Core
-public import Ordinal
 public import Cardinal
+public import Ordinal
+public import Tensors_Core
 
 extension Tensor.Value
 where
